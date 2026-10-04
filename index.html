@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRINCE interiors &amp; exteriors — Interior Designer</title>
+  <meta name="description" content="PRINCE interiors &amp; exteriors — Interior designer based in Chandrapur, Maharashtra. Dedicated interior planning, styling, and bespoke design." />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+  <!-- Inline critical loader styles — visible before JS loads -->
+  <style>
+    .loading-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #FAF7F2;
+      transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .loading-overlay.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .loader-bar-track {
+      width: 200px;
+      height: 2px;
+      background: #F5F0E8;
+      border-radius: 1px;
+      overflow: hidden;
+    }
+    .loader-bar-fill {
+      width: 0%;
+      height: 100%;
+      background: #C9A96E;
+      border-radius: 1px;
+      transition: width 0.25s ease-out;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════ Loading Overlay ═══════════════════ -->
+  <div class="loading-overlay" id="loading-overlay">
+    <div class="loader-bar-track">
+      <div class="loader-bar-fill" id="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════ Navigation ═══════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="PRINCE interiors &amp; exteriors">
+        PRINCE interiors &amp; exteriors
+      </a>
+
+      <div class="nav__links" id="nav-links">
+        <a href="#portfolio" class="nav__link">Work</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#process" class="nav__link">Process</a>
+        <a href="#cta" class="nav__link">Contact</a>
+      </div>
+
+      <a href="tel:08624912744" class="nav__cta">Call Now</a>
+
+      <button class="nav__hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ Sections ═══════════════════ -->
+  <section id="hero"></section>
+  <section id="trust-bar"></section>
+  <section id="before-after"></section>
+  <section id="services"></section>
+  <section id="interior-tour"></section>
+  <section id="portfolio"></section>
+  <section id="process"></section>
+  <section id="testimonials"></section>
+  <section id="marquee"></section>
+  <section id="instagram"></section>
+  <section id="cta"></section>
+  <section id="footer"></section>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
